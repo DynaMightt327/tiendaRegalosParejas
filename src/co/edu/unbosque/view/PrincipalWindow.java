@@ -1,6 +1,7 @@
 package co.edu.unbosque.view;
 
 import java.awt.Color;
+import java.awt.Font;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -26,6 +27,12 @@ public class PrincipalWindow extends JFrame {
 		this.setResizable(false);
 		this.setLayout(null);
 		this.getContentPane().setBackground(Color.decode("#CDBBFC"));
+		
+		title = new JLabel("Lucky j3");
+		title.setBounds(300, 200, 400, 80);
+		title.setForeground(Color.decode("#160344"));
+		title.setFont(new Font("Georgia", Font.BOLD, 70));
+		this.add(title);
 
 	}
 
